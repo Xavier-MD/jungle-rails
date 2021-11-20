@@ -49,7 +49,7 @@
         <li>
           <div class="text-nowrap text-muted" style="height: 50px; margin-left: 10px; line-height: 50px;">
             <% if current_user %>
-              Signed in as <%= current_user.name %> | <%= link_to "Logout", '/logout' %>
+              Signed in as <%= current_user.first_name %> | <%= link_to "Logout", '/logout' %>
             <% else %>
               <%= link_to 'Login', '/login' %> | <%= link_to 'Signup', '/signup' %>
             <% end %>
